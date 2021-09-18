@@ -1,0 +1,16 @@
+name: "my container action"
+description: "ACG lab action container"
+author: "Michael Nyembe"
+inputs:
+  myInput:
+    description: 'greeting to use'
+    required: true
+    default: 'Miko Phantom'
+outputs:
+  myOutput: 
+    description: 'total memory'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+
+  
